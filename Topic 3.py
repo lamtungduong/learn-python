@@ -1,31 +1,22 @@
 print("Welcome to Lam's Calculator Program.")
 print("This program will calculate the sum X of X1 and X2")
 
-counter = 1
-
+print("Please enter number X1: ", end="")
 while True:
     try:
-        if counter == 1:
-            X1 = float(input("Please enter number X1: "))
-        else:
-            X1 = float(input(""))
+        X1 = float(input(""))
     except ValueError:
         print("I said NUMBER, you fucking understand? Now enter number X1 once again: ", end="")
-        counter += 1
         continue
     else:
-        counter = 1
         break
 
+print("Please enter number X2: ", end="")
 while True:
     try:
-        if counter == 1:
-            X2 = float(input("Please enter number X2: "))
-        else:
-            X2 = float(input(""))
+        X2 = float(input(""))
     except ValueError:
         print("I said NUMBER, you dumb fuck. Now use your brain and enter number X2: ", end="")
-        counter += 1
         continue
     else:
         break
